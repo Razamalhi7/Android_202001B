@@ -1,12 +1,10 @@
-
-
-
-
-
+basic controls
 alert dialog
 progress dialog Horizontal
 prgress dialog ring
 Custom Alert Dialog
+
+
 popup menu
 option menu
 context menu
