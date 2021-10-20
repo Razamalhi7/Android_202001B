@@ -1,0 +1,73 @@
+
+
+
+
+
+alert dialog
+progress dialog Horizontal
+prgress dialog ring
+Custom Alert Dialog
+popup menu
+option menu
+context menu
+drawer menu 
+viewflipper
+Quiz app using Viewflipper
+chip chipgroup
+working on frangments
+floating action button
+AutoCompleteTextView
+MultiAutoCompleteTextView
+webview
+custom adapter
+circle imageview
+multiselection listview
+Audio player
+status bar notifications
+video view
+tab layout using ViewPager
+table layout (Calculator)
+Spinner (Country city territory)
+Calculator
+TicTacToe
+Alarm on battery fulll
+RingTones
+RecyclerView reorder items
+DragLinearLayout
+SpeechToText
+date picker Dialog
+time picker Dialog
+animations
+Graphics
+gif image
+Shared Preferences
+Default Shared Preferences
+SearchView
+Location Provider
+SearchView in action bar
+intent filters
+scroll view
+bluetooth 
+
+Internal Storage
+External Storage
+WifiManager 
+sms manager
+TelePhonyManager
+ContentProvider (Contacts) 
+SQLite database
+Web services API's Volley library 
+google map
+LoginWithGoogle Firebase
+RealTimeDatabase Firebase
+Notification Firebase
+Storage Firebase image/Video uploading
+Broadcast 
+---background  Services
+-started service
+-foreground service
+-bound/Unbound service
+-intent service
+-music play/pause/stop options in notification (using pending intent) in foreground service
+
+ContentProvider(Video Files)
