@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:onClick="btn_img"
+        android:layout_margin="10dp"
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:src="@drawable/off"
+        android:layout_height="100dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:layout_below="@id/imageButton"
+        android:text="Select Subjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/textview"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/ch_html"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HTML" />
+        <CheckBox
+            android:id="@+id/ch_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JAVA" />
+        <CheckBox
+            android:id="@+id/ch_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android" />
+    </LinearLayout>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="btn_submit"
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:layout_below="@id/linearlayout"
+        android:text="Select Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <RadioGroup
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioButton_male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButton_female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+</RelativeLayout>
