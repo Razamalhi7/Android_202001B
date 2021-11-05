@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@drawable/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint="Name"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    ></EditText>
+                <EditText
+                    android:hint="Phone"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    ></EditText>
+                <Button
+                    android:text="Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Button>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/img2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/img3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/img4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/img6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/img7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/img2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/img4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+
+    </ViewFlipper>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="btn_pre"
+            android:text="Pre"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:text="Play"
+            android:onClick="btn_play"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:drawableLeft="@drawable/ic_baseline_play_arrow_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:text="Stop"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:onClick="btn_stop"
+            android:layout_margin="2dp"
+            android:drawableLeft="@drawable/ic_baseline_stop_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:text="Next"
+            android:onClick="btn_next"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:drawableLeft="@drawable/ic_baseline_navigate_next_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
