@@ -4,20 +4,24 @@ progress dialog Horizontal
 prgress dialog ring
 Custom Alert Dialog
 radio button , check box, image button
+AutoCompleteTextView
+MultiAutoCompleteTextView
+Spinner
+ListView
+custom adapter
+viewflipper
+
+
 
 popup menu
 option menu
 context menu
 drawer menu 
-viewflipper
 Quiz app using Viewflipper
 chip chipgroup
 working on frangments
 floating action button
-AutoCompleteTextView
-MultiAutoCompleteTextView
 webview
-custom adapter
 circle imageview
 multiselection listview
 Audio player
