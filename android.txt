@@ -10,12 +10,11 @@ Spinner
 ListView
 custom adapter
 viewflipper
-
-
-
 popup menu
 option menu
 context menu
+
+
 drawer menu 
 Quiz app using Viewflipper
 chip chipgroup
