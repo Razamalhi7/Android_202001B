@@ -1,0 +1,63 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="@string/reply_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="credential">
+        <EditTextPreference app:key="UserName" app:title="User Name">
+
+        </EditTextPreference>
+
+        <EditTextPreference app:title="Password" app:key="Password"></EditTextPreference>
+    </PreferenceCategory>
+
+    <ListPreference
+        app:key="Gender"
+        app:title="Gender"
+        app:entries="@array/gender"
+        app:entryValues="@array/gender"
+        >
+
+    </ListPreference>
+
+    <MultiSelectListPreference
+        app:key="Subjects"
+        app:title="Subjects"
+        app:entryValues="@array/subjects"
+        app:entries="@array/subjects"
+        >
+
+    </MultiSelectListPreference>
+    <SwitchPreference app:title="Sync Data" app:key="IsDataSync">
+
+    </SwitchPreference>
+</PreferenceScreen>

@@ -15,6 +15,10 @@ option menu
 context menu
 drawer menu with Fragments
 tab layout using ViewPager
+Shared Preferences
+Default Shared Preferences
+
+
 
 Quiz app using Viewflipper
 chip chipgroup
@@ -40,15 +44,12 @@ time picker Dialog
 animations
 Graphics
 gif image
-Shared Preferences
-Default Shared Preferences
 SearchView
 Location Provider
 SearchView in action bar
 intent filters
 scroll view
 bluetooth 
-
 Internal Storage
 External Storage
 WifiManager 
