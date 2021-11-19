@@ -17,11 +17,10 @@ drawer menu with Fragments
 tab layout using ViewPager
 Shared Preferences
 Default Shared Preferences
-
+chip chipgroup
 
 
 Quiz app using Viewflipper
-chip chipgroup
 working on frangments
 floating action button
 webview
