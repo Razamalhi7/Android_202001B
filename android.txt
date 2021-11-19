@@ -18,12 +18,11 @@ tab layout using ViewPager
 Shared Preferences
 Default Shared Preferences
 chip chipgroup
-
+webview
 
 Quiz app using Viewflipper
 working on frangments
 floating action button
-webview
 circle imageview
 multiselection listview
 Audio player
