@@ -19,12 +19,12 @@ Shared Preferences
 Default Shared Preferences
 chip chipgroup
 webview
+multiselection listview
 
 Quiz app using Viewflipper
 working on frangments
 floating action button
 circle imageview
-multiselection listview
 Audio player
 status bar notifications
 video view
