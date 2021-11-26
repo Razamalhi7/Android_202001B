@@ -23,12 +23,11 @@ multiselection listview
 Quiz app using Viewflipper
 working on frangments
 Audio player
-
+video view
 
 floating action button
 circle imageview
 status bar notifications
-video view
 table layout (Calculator)
 Spinner (Country city territory)
 Calculator
