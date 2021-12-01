@@ -24,6 +24,7 @@ Quiz app using Viewflipper
 working on frangments
 Audio player
 video view
+SQLite database
 
 floating action button
 circle imageview
@@ -54,7 +55,6 @@ WifiManager
 sms manager
 TelePhonyManager
 ContentProvider (Contacts) 
-SQLite database
 Web services API's Volley library 
 google map
 LoginWithGoogle Firebase
