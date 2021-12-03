@@ -1,21 +1,29 @@
 package com.example.myapplication;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentResolver;
+import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.util.stream.Stream;
+
 public class MainActivity extends AppCompatActivity {
 
 
     EditText txtName,txtPhone,txtEmail,txtPassword;
     ImageView imageView;
-
+    Uri  uri=null;
     MySqliteDb db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +41,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btn_submit(View view)
+    {if(uri!=null)
     {
+        
+
+
+    }
+
+
+
         String name=txtName.getText().toString();
         String phone=txtPhone.getText().toString();
         String email=txtEmail.getText().toString();
         String pass=txtPassword.getText().toString();
-        boolean isInserted=db.insertStudent(name,phone,email,pass);
+        boolean isInserted=db.insertStudent(name,phone,email,pass,null);
         if(isInserted)
         {
             Toast.makeText(this, "insert successfully...", Toast.LENGTH_SHORT).show();
@@ -69,4 +85,35 @@ public class MainActivity extends AppCompatActivity {
                 .show();
 
     }
+
+    public void btn_intent_students(View view)
+    {
+        Intent intent=new Intent(this,Students.class);
+        startActivity(intent);
+    }
+
+    public void btn_browse_img(View view)
+    {
+        Intent intent=new Intent(Intent.ACTION_GET_CONTENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("*/*");
+        startActivityForResult(intent,101);
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(resultCode==RESULT_OK && requestCode==101)
+        {
+            uri=data.getData();
+            imageView.setImageURI(uri);
+        }
+
+    }
 }
+
+
+
+

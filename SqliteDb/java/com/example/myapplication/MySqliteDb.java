@@ -15,7 +15,7 @@ public class MySqliteDb extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table Student(Id INTEGER primary key autoincrement,Name text,Phone text,Email text,Password text )");
+        db.execSQL("create table Student(Id INTEGER primary key autoincrement,Name text,Phone text,Email text,Password text,Image blob )");
 
     }
 
@@ -24,7 +24,7 @@ public class MySqliteDb extends SQLiteOpenHelper {
 
     }
 
-    public boolean insertStudent(String name, String phone, String email, String password)
+    public boolean insertStudent(String name, String phone, String email, String password,byte[] Image)
     {
         SQLiteDatabase db=  getWritableDatabase();
         ContentValues values=new ContentValues();
@@ -32,6 +32,8 @@ public class MySqliteDb extends SQLiteOpenHelper {
         values.put("Phone",phone);
         values.put("Email",email);
         values.put("Password",password);
+        values.put("Image",Image);
+
         long res=  db.insert("Student",null,values);
         return  res!=-1;
     }
@@ -54,7 +56,8 @@ public class MySqliteDb extends SQLiteOpenHelper {
         Cursor cursor= db.rawQuery("select * from  Student where Id="+id,null);
         return  cursor;
     }
-    public boolean updateStudent(String Id,String name, String phone, String email, String password)
+
+    public boolean updateStudent(String Id,String name, String phone, String email, String password,byte[] Image)
     {
         SQLiteDatabase db=  getWritableDatabase();
         ContentValues values=new ContentValues();
@@ -62,10 +65,18 @@ public class MySqliteDb extends SQLiteOpenHelper {
         values.put("Phone",phone);
         values.put("Email",email);
         values.put("Password",password);
+        if(Image!=null)
+            values.put("Image",Image);
         int res=  db.update("Student",values,"Id=?",new String[]{Id});
         return  res>0;
     }
 
+    public boolean deleteStudent(String Id)
+    {
+        SQLiteDatabase db=  getWritableDatabase();
+        int res=  db.delete("Student","Id=?",new String[]{Id});
+        return  res>0;
+    }
 
 
 }

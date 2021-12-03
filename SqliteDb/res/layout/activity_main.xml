@@ -54,7 +54,7 @@
     <Button
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-
+        android:onClick="btn_browse_img"
         android:layout_below="@id/img"
         android:layout_toRightOf="@id/linearlayout"
         android:text="browse image"
@@ -66,6 +66,13 @@
         android:layout_alignParentBottom="true"
         android:text="view data"
         android:onClick="btn_view_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+    <Button android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="btn_intent_students"
+        android:text="Students"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></Button>
 
