@@ -3,7 +3,10 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,7 +47,9 @@ public class Students extends AppCompatActivity {
             String phone=cursor.getString(2);
             String email=cursor.getString(3);
             String password=cursor.getString(4);
-            Student std=new Student(id,name,phone,email,password);
+            byte[] imgArr= cursor.getBlob(5);
+            Bitmap bitmap = BitmapFactory.decodeByteArray(imgArr, 0, imgArr.length);
+            Student std=new Student(id,name,phone,email,password,bitmap);
             lst.add(std);
         }
         adapter.notifyDataSetChanged();
@@ -88,12 +93,15 @@ public class Students extends AppCompatActivity {
             ImageView stdImg=v.findViewById(R.id.stdImg);
             ImageView btnDelete=v.findViewById(R.id.img_btn_delete);
             ImageView btnEdit=v.findViewById(R.id.img_btn_edit);
+            ImageView btnDetail=v.findViewById(R.id.img_btn_detail);
+
 
             Student obj=lst.get(position);
             txtId.setText(obj.Id);
             txtName.setText(obj.Name);
             txtPhone.setText(obj.Phone);
             txtEmail.setText(obj.Email);
+            stdImg.setImageBitmap(obj.Img);
 
             btnDelete.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -111,9 +119,23 @@ public class Students extends AppCompatActivity {
             btnEdit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(context, "Updated", Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(context,EditActivity.class);
+                    intent.putExtra("StudentId",obj.Id);
+                    startActivity(intent);
                 }
             });
+
+            btnDetail.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent=new Intent(context,DetailActivity.class);
+                    intent.putExtra("StudentId",obj.Id);
+                    startActivity(intent);
+
+                }
+            });
+
             return v;
         }
     }

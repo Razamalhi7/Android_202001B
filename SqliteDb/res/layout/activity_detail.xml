@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/std_img_detail"
+        android:layout_margin="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/std_img_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/std_name_detail"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:text="Muhamad Ali Khan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/std_email_detail"
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:text="Muhamad.Ali@gmail.com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/std_phone_detail"
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:text="0320-96532141"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

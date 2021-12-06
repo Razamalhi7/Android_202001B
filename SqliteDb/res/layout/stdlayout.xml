@@ -4,13 +4,16 @@
     android:padding="5dp"
     android:layout_height="match_parent">
 
-
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/stdImg"
+        android:layout_marginRight="5dp"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/ic_launcher_background"
-        ></ImageView>
+        app:civ_border_width="1dp"
+        app:civ_border_color="#000000"/>
+
 
     <LinearLayout
         android:layout_marginLeft="5dp"
@@ -60,7 +63,11 @@
             android:src="@drawable/ic_baseline_edit_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"></ImageView>
-
+        <ImageView
+            android:id="@+id/img_btn_detail"
+            android:src="@drawable/ic_baseline_remove_red_eye_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
     </LinearLayout>
 
 </RelativeLayout>
