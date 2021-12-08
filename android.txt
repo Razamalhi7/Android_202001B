@@ -25,6 +25,9 @@ working on frangments
 Audio player
 video view
 SQLite database
+date picker Dialog
+time picker Dialog
+TicTacToe
 
 floating action button
 circle imageview
@@ -32,21 +35,19 @@ status bar notifications
 table layout (Calculator)
 Spinner (Country city territory)
 Calculator
-TicTacToe
 Alarm on battery fulll
 RingTones
 RecyclerView reorder items
 DragLinearLayout
 SpeechToText
-date picker Dialog
-time picker Dialog
+intent filters
+SearchView in action bar
+SearchView
+
 animations
 Graphics
 gif image
-SearchView
 Location Provider
-SearchView in action bar
-intent filters
 scroll view
 bluetooth 
 Internal Storage
