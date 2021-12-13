@@ -28,9 +28,17 @@ SQLite database
 date picker Dialog
 time picker Dialog
 TicTacToe
+sms manager
+bluetooth Adapter
+circle imageview
+WifiManager
+intent filters
+SearchView in action bar
+SearchView
+Location Provider
+
 
 floating action button
-circle imageview
 status bar notifications
 table layout (Calculator)
 Spinner (Country city territory)
@@ -40,20 +48,12 @@ RingTones
 RecyclerView reorder items
 DragLinearLayout
 SpeechToText
-intent filters
-SearchView in action bar
-SearchView
-
 animations
 Graphics
 gif image
-Location Provider
 scroll view
-bluetooth 
 Internal Storage
 External Storage
-WifiManager 
-sms manager
 TelePhonyManager
 ContentProvider (Contacts) 
 Web services API's Volley library 
@@ -69,5 +69,4 @@ Broadcast
 -bound/Unbound service
 -intent service
 -music play/pause/stop options in notification (using pending intent) in foreground service
-
 ContentProvider(Video Files)
