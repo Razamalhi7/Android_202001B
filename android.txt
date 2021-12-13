@@ -36,7 +36,7 @@ intent filters
 SearchView in action bar
 SearchView
 Location Provider
-
+animations
 
 floating action button
 status bar notifications
@@ -48,7 +48,6 @@ RingTones
 RecyclerView reorder items
 DragLinearLayout
 SpeechToText
-animations
 Graphics
 gif image
 scroll view
