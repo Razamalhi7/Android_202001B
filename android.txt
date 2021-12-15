@@ -37,6 +37,8 @@ SearchView in action bar
 SearchView
 Location Provider
 animations
+Broadcast receiver (received sms)
+
 
 floating action button
 status bar notifications
@@ -61,7 +63,6 @@ LoginWithGoogle Firebase
 RealTimeDatabase Firebase
 Notification Firebase
 Storage Firebase image/Video uploading
-Broadcast 
 ---background  Services
 -started service
 -foreground service
