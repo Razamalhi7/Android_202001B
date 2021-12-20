@@ -38,14 +38,13 @@ SearchView
 Location Provider
 animations
 Broadcast receiver (received sms)
-
+Alarm on battery fulll
 
 floating action button
 status bar notifications
 table layout (Calculator)
 Spinner (Country city territory)
 Calculator
-Alarm on battery fulll
 RingTones
 RecyclerView reorder items
 DragLinearLayout
