@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_margin="100dp"
+        android:id="@+id/img"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ImageView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        app:menu_colorPressed="#8F2720"
+        android:layout_height="wrap_content">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:src="@drawable/ic_baseline_camera_alt_24"
+            app:fab_label="Capture Image"
+            app:fab_size="mini"
+            android:onClick="capture_image"
+            app:fab_colorNormal="#FF9800"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.github.clans.fab.FloatingActionButton>
+        <com.github.clans.fab.FloatingActionButton
+            android:src="@drawable/ic_baseline_create_new_folder_24"
+            android:layout_width="wrap_content"
+            app:fab_size="mini"
+            app:fab_colorNormal="#009688"
+            app:fab_label="Select Image"
+            android:layout_height="wrap_content">
+
+        </com.github.clans.fab.FloatingActionButton>
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
+</RelativeLayout>
