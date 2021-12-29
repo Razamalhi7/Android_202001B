@@ -41,9 +41,9 @@ Broadcast receiver (received sms)
 Alarm on battery fulll
 floating action button
 Capture Image
-
-
 status bar notifications
+
+
 table layout (Calculator)
 Spinner (Country city territory)
 Calculator

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Basic Notification"
+            android:onClick="BasicNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:text="Expanded Notification"
+            android:onClick="ExpandedNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:text="Progress Notification"
+            android:onClick="ProgressNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:text="HeadsUp Notification"
+            android:onClick="HeadsUpNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:text="LockScreen Notification"
+            android:onClick="LockScreenNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
