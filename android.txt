@@ -44,7 +44,7 @@ Capture Image
 status bar notifications
 ghraphics
 Internal Storage
-
+External Storage
 
 
 
@@ -57,7 +57,6 @@ DragLinearLayout
 SpeechToText
 gif image
 scroll view
-External Storage
 TelePhonyManager
 ContentProvider (Contacts) 
 Web services API's Volley library 
