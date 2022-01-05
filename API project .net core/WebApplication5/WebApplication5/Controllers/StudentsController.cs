@@ -56,5 +56,20 @@ namespace WebApplication5.Controllers
             _context.SaveChanges();
             return  new { StatusCode = 202, Message = $"Record deleted of id {id}" };
         }
+ [HttpPatch]
+        public object UpdateStudents(Student student)
+        {
+            var std = _context.Students.FirstOrDefault(x=>x.StudentId==student.StudentId);
+            if(std is null)
+                return new { StatusCode = 404, Message = "Record not found" };
+
+            std.Name = student.Name;
+            std.Phone = student.Phone;
+            std.Batch = student.Batch;
+            std.Email = student.Email;
+            std.Password = student.Password;
+            _context.SaveChanges();
+            return new { StatusCode = 200, Message = "Record Updated" };
+        }
     }
 }
